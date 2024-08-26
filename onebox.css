@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    /* Black background */
+    color: #fff;
+    /* White text */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar {
+    width: 80px;
+    /* Sidebar width */
+    background-color: #1a1a1a;
+    /* Dark sidebar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.sidebar .logo-container img {
+    width: 50px;
+    /* Increased logo size */
+    margin-bottom: 20px;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar-nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar-nav ul li a {
+    display: block;
+    padding: 10px;
+}
+
+.sidebar-nav ul li a img {
+    width: 30px;
+    /* Increased icon size */
+}
+
+.badge {
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
+
+.profile-container img {
+    width: 50px;
+    /* Increased profile icon size */
+    border-radius: 50%;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-header {
+    width: 100%;
+    background-color: #222;
+    /* Dark header */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    /* Make the header fixed to the top */
+    top: 0;
+    left: 80px;
+    /* Adjust for the width of the sidebar */
+    right: 0;
+    z-index: 1000;
+    /* Ensure it stays above other content */
+}
+
+.main-header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.workspace {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    /* Adjusted margin to make the workspace section more visible */
+}
+
+.workspace span {
+    margin-right: 10px;
+    white-space: nowrap;
+    /* Ensure text doesn't overflow */
+}
+
+.toggle-icon {
+    width: 24px;
+    cursor: pointer;
+    /* Change cursor to pointer for toggle icon */
+    margin-left: 10px;
+    /* Ensure there's some spacing between text and icon */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    /* Add padding to account for the fixed header */
+}
+
+.content .email-icon-container img {
+    width: 150px;
+    /* Adjust the size of the email icon */
+}
+
+.content h2 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.content p {
+    font-size: 16px;
+    color: #bbb;
+    /* Lighter gray for secondary text */
+}

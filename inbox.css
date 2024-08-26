@@ -1,0 +1,244 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.sidebar {
+  width: 80px; /* Sidebar width */
+  background-color: #1a1a1a; /* Dark sidebar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.sidebar .logo-container img {
+  width: 50px; /* Increased logo size */
+  margin-bottom: 20px;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.sidebar-nav ul li {
+  margin: 20px 0;
+}
+
+.sidebar-nav ul li a {
+  display: block;
+  padding: 10px;
+}
+
+.sidebar-nav ul li a img {
+  width: 30px; /* Increased icon size */
+}
+
+.badge {
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+
+.profile-container img {
+  width: 50px; /* Increased profile icon size */
+  border-radius: 50%;
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header {
+  width: 100%;
+  background-color: #222; /* Dark header */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Make the header fixed to the top */
+  top: 0;
+  left: 80px; /* Adjust for the width of the sidebar */
+  right: 0;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.main-header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.workspace {
+  display: flex;
+  align-items: center;
+  margin-right: 40px; /* Adjusted margin to make the workspace section more visible */
+}
+
+.workspace span {
+  margin-right: 10px;
+  white-space: nowrap; /* Ensure text doesn't overflow */
+}
+
+.toggle-icon {
+  width: 24px;
+  cursor: pointer; /* Change cursor to pointer for toggle icon */
+  margin-left: 10px; /* Ensure there's some spacing between text and icon */
+}
+
+.inbox-content {
+  display: flex;
+  padding-top: 60px; /* Add padding to account for the fixed header */
+}
+
+.inbox-sidebar {
+  width: 300px;
+  background-color: #1a1a1a;
+  padding: 20px;
+}
+
+.inbox-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.inbox-header h2 {
+  color: #1E90FF;
+  font-size: 18px;
+  margin: 0;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.search-bar .search-icon {
+  margin-left: -30px;
+}
+
+.inbox-list {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.inbox-item {
+  padding: 15px;
+  border-bottom: 1px solid #444;
+}
+
+.inbox-item .email-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.inbox-item .email-subject {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.email-status {
+  padding: 2px 6px;
+  border-radius: 3px;
+  background-color: #228B22; /* Example status color */
+  font-size: 12px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.campaign-name {
+  font-size: 12px;
+  background-color: #555;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.email-details {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #333;
+  margin: 0 10px;
+}
+
+.email-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.email-body {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.email-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reply-btn,
+.view-replies-btn {
+  background-color: #1E90FF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.lead-details {
+  width: 300px;
+  background-color: #1a1a1a;
+  padding: 20px;
+  margin-left: 10px;
+}
+
+.lead-details h3 {
+  margin-top: 0;
+}
+
+.activities .activity-step {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #444;
+}

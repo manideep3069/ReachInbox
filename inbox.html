@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onebox Inbox</title>
+    <link rel="stylesheet" href="inbox.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo-container">
+            <img src="reachinbox_ai_logo.jpeg" alt="ReachInbox Logo">
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#"><img src="homelogo.jpeg" alt="Home Icon"></a></li>
+                <li><a href="#"><img src="userlogo.png" alt="User Icon"></a></li>
+                <li><a href="#"><img src="mailLogo.png" alt="Email Icon"></a></li>
+                <li><a href="#"><img src="sendlogo.png" alt="Send Icon"></a></li>
+                <li><a href="#"><img src="listlogo.png" alt="List Icon"></a></li>
+                <li><a href="#"><img src="notlogo.png" alt="Notification Icon"><span class="badge">12</span></a></li>
+                <li><a href="#"><img src="statslogo.png" alt="Stats Icon"></a></li>
+            </ul>
+        </nav>
+        <div class="profile-container">
+            <img src="userlogo.png" alt="Profile Icon">
+        </div>
+    </aside>
+
+    <div class="dashboard">
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Onebox</h1>
+                <div class="workspace">
+                    <span>Tim's Workspace</span>
+                    <img src="smart-toggle-icon.png" alt="Toggle Icon" class="toggle-icon">
+                </div>
+            </header>
+
+            <!-- Inbox Content -->
+            <div class="inbox-content">
+                <div class="inbox-sidebar">
+                    <div class="inbox-header">
+                        <h2>All Inbox(s)</h2>
+                        <span>25/25 Inboxes selected</span>
+                    </div>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search">
+                        <span class="search-icon">&#x1F50D;</span> <!-- Example search icon -->
+                    </div>
+                    <div class="inbox-list">
+                        <div class="inbox-item">
+                            <div class="email-info">
+                                <span class="email-address">Beata@gmail.com</span>
+                                <span class="email-date">Mar 7</span>
+                            </div>
+                            <div class="email-subject">
+                                <p>I've tried a lot and ...</p>
+                                <span class="email-status interested">Interested</span>
+                                <span class="campaign-name">Campaign Name</span>
+                            </div>
+                        </div>
+                        <!-- Repeat inbox-item divs for other emails -->
+                    </div>
+                </div>
+
+                <div class="email-details">
+                    <div class="email-header">
+                        <h3>New Product Launch</h3>
+                        <span class="email-date">20 June 2022 : 9:16AM</span>
+                    </div>
+                    <div class="email-body">
+                        <p>from : jeanne@icloud.com cc : lennon.j@mail.com</p>
+                        <p>to : lennon.j@mail.com</p>
+                        <p>Hi {FIRST_NAME},</p>
+                        <p>I would like to introduce you to SaaSgrow, a productized design service specifically tailored for saas startups. Our aim is to help you enhance the user experience and boost the visual appeal of your software products.</p>
+                    </div>
+                    <div class="email-actions">
+                        <button class="reply-btn">Reply</button>
+                        <button class="view-replies-btn">View all 4 replies</button>
+                    </div>
+                </div>
+
+                <div class="lead-details">
+                    <h3>Lead Details</h3>
+                    <p><strong>Name:</strong> Orlando</p>
+                    <p><strong>Contact No:</strong> +54-9062827869</p>
+                    <p><strong>Email ID:</strong> orlando@gmail.com</p>
+                    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/timvadde/">linkedin.com/in/timvadde/</a></p>
+                    <p><strong>Company Name:</strong> Reachinbox</p>
+
+                    <h3>Activities</h3>
+                    <div class="activities">
+                        <div class="activity-step">
+                            <span>Step 1: Email</span>
+                            <span class="activity-date">Sent 3rd, Feb</span>
+                        </div>
+                        <div class="activity-step">
+                            <span>Step 2: Email</span>
+                            <span class="activity-date">Opened 5th, Feb</span>
+                        </div>
+                        <div class="activity-step">
+                            <span>Step 3: Email</span>
+                            <span class="activity-date">Opened 5th, Feb</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
